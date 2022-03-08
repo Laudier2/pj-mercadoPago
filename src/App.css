@@ -1,0 +1,256 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.div-ld{
+  display: inline-block;
+}
+
+.div-left{
+  float: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Laudier2 
+Laudier2
+/
+store-ts
+Private
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+store-ts/src/components/chec/chec.css
+@Laudier2
+Laudier2 Update 02
+Latest commit 8baa357 on 11 Sep 2021
+ History
+ 1 contributor
+181 lines (153 sloc)  2.41 KB
+  
+.box1{
+    width: 162px;
+    height: 200px;
+    margin: 2px 5px;
+    transition: 1s;
+    text-align: center;
+    border: 1px;
+}
+
+.box1:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px rgb(54, 52, 52);
+  z-index: 2;
+}
+
+
+.mr1 {
+  margin-left: 6%;
+}
+
+.auto{
+  margin: auto;
+}
+.h6{
+  font-weight: bold;
+  font-size: 10px;
+  text-shadow: 1px 1px 5px rgb(219, 209, 209);
+
+}
+
+.r1{
+  display: none;
+}
+
+.r3 {
+  position: absolute;
+  z-index: 1;
+  width: 220%;
+  margin-top: 68px;
+  display: none;
+}
+
+.lupa {
+  position: absolute;
+  margin-top: -27px;
+  margin-left: 92%;
+  width: 18px;
+}
+
+.img-android0{
+  display: none;
+  width: 15px;
+}
+.img-android01{
+  display: none;
+}
+
+.bg-m{
+  margin-left: 20px;
+}
+
+.lupa2 {
+  display: none;
+}
+
+.r4 {
+  display: none;
+}
+
+.div-lado{
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 3px;
+ }
+ .H5{
+   font-size: 16px;
+    margin: 3px;
+ }
+
+ .h5{
+   font-size: 12px;
+   font-weight: bold;
+ }
+
+ @media screen and (max-width: 780px) {
+  .box1{
+    width: 300px;
+    height: 80px;
+    margin-left: 1%;
+    text-align: center;
+  }
+
+  .img-android0{
+    width: 45px;
+    display: inline-block;
+  }
+  .img-android01{
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .h5{
+    font-size: 5px;
+    font-weight: bold;
+  }
+
+  .mr1 {
+    margin-left: 6%;
+  }
+
+  .lupa2 {
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 215%;
+    display:block;
+  }
+
+  .lupaBox {
+    box-shadow: 0 0 10px black;
+  }
+
+  .H5{
+      font-size: 13px;
+  }
+
+  .r1 {
+    display: block;
+  }
+
+  .h6{
+    font-weight: bold;
+    font-size: 6px;
+    text-shadow: 1px 1px 5px rgb(219, 209, 209);    
+  }
+  .r3 {
+    position: absolute;
+    z-index: 1;
+    width: 208%;
+    margin-top: 68px;
+    display: block;
+  }
+  .div-lado{
+    display: inline-block;
+    margin-top: 4px;
+   }
+ }
+
+.ul li {
+  text-align: center;
+  position: relative;
+  background-color: #0CF;
+  display: inline-block;
+  margin: 2rem 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ul li::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #0CF;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.ul li:hover{
+  /*transform: scale(1.25, 1.25);*/
+  transform: scale(1.25, 1.25);
+}
+
+.ul li:hover{
+  opacity: 1;
+}
+
